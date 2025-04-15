@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request a Call – Traxlent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-900">
+    <section class="text-center py-20 px-6 bg-gray-50">
+      <h1 class="text-4xl font-extrabold mb-6">Let’s See If We’re a Fit</h1>
+      <p class="text-lg max-w-2xl mx-auto mb-8">
+        We don’t use an open calendar — every conversation is tailored. Fill out the quick form below and we’ll follow up to schedule a call.
+      </p>
+    </section>
+
+    <section class="py-10 px-6 max-w-xl mx-auto">
+      <form id="contactForm" class="space-y-6 bg-white shadow-md rounded-lg p-6">
+        <div>
+          <label for="name" class="block font-medium text-gray-700 mb-1">Your Name</label>
+          <input type="text" name="name" id="name" required class="w-full border border-gray-300 rounded px-4 py-2" />
+        </div>
+        <div>
+          <label for="email" class="block font-medium text-gray-700 mb-1">Email Address</label>
+          <input type="email" name="email" id="email" required class="w-full border border-gray-300 rounded px-4 py-2" />
+        </div>
+        <div>
+          <label for="business" class="block font-medium text-gray-700 mb-1">Tell us a bit about your business</label>
+          <textarea name="business" id="business" rows="4" required class="w-full border border-gray-300 rounded px-4 py-2"></textarea>
+        </div>
+        <div>
+          <label for="service" class="block font-medium text-gray-700 mb-1">What are you interested in?</label>
+          <select name="service" id="service" class="w-full border border-gray-300 rounded px-4 py-2">
+            <option value="">Select an option</option>
+            <option value="reach">Reach (Lead Gen / Outreach)</option>
+            <option value="voice">Voice (Content / Ghostwriting)</option>
+            <option value="build">Build (Landing Pages / Automation)</option>
+            <option value="not_sure">Not sure yet</option>
+          </select>
+        </div>
+        <div>
+          <button type="submit" class="bg-orange-500 text-white px-6 py-3 rounded hover:bg-orange-600">
+            Submit Request
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <script>
+      document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+    
+        const form = e.target;
+        const data = {
+          name: form.name.value,
+          email: form.email.value,
+          business: form.business.value,
+          service: form.service.value
+        };
+    
+        fetch("https://script.google.com/macros/s/AKfycbxlpTYZoMfFYqI8zfcheVxsU41W77usjUegEZ8UkuuA5HAMFyQO3QUgVUC-X18oD8zPdw/exec", {
+          method: "POST",
+          mode: "no-cors",
+          body: JSON.stringify(data),
+          headers: {
+            "Content-Type": "application/json"
+          }
+        })
+        .then(() => {
+          // Even though we can't read the response in no-cors, assume it worked
+          window.location.href = "thank-you.html";
+        })
+        .catch(error => {
+          console.error("Error submitting form:", error);
+          alert("Something went wrong. Please email us directly.");
+        });
+      });
+    </script>
+    
+  </body>
+</html>
