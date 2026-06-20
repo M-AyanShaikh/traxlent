@@ -31,10 +31,10 @@ export function Contact() {
               <div className="flex flex-col gap-1">
                 <span className="font-mono text-xs uppercase text-primary">Email</span>
                 <a
-                  href="mailto:traxlentinfo@gmail.com"
+                  href="mailto:hello@traxlent.ca"
                    className="font-mono text-sm text-foreground hover:text-primary transition-colors duration-150"
                 >
-                  traxlentinfo@gmail.com
+                  hello@traxlent.ca
                 </a>
               </div>
             </div>
@@ -43,7 +43,7 @@ export function Contact() {
           {/* Right column — external FormSubmit form */}
           <div className="flex items-start">
             <form
-              action="https://formsubmit.co/traxlentinfo@gmail.com"
+              action="https://formsubmit.co/hello@traxlent.ca"
               method="POST"
               className="space-y-6 w-full"
             >

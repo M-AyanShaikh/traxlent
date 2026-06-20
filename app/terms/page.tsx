@@ -20,7 +20,7 @@ export default function TermsPage() {
           <p>Traxlent is not liable for indirect or consequential damages arising from use of the site.</p>
 
           <h2>Contact</h2>
-          <p>Questions about these terms? Email <a href="mailto:traxlentinfo@gmail.com">traxlentinfo@gmail.com</a>.</p>
+          <p>Questions about these terms? Email <a href="mailto:hello@traxlent.ca">hello@traxlent.ca</a>.</p>
         </section>
 
         <div className="mt-8">

@@ -44,10 +44,10 @@ export function Footer() {
 
           <div className="flex items-center gap-4">
             <a
-              href="mailto:traxlentinfo@gmail.com"
+              href="mailto:hello@traxlent.ca"
               className="font-mono text-xs text-foreground hover:text-primary transition-colors duration-150"
             >
-              traxlentinfo@gmail.com
+              hello@traxlent.ca
             </a>
 
             <a

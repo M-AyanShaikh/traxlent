@@ -20,7 +20,7 @@ export default function PrivacyPage() {
           <p>We may use third-party services (for example, FormSubmit) to process contact form submissions. Please review their policies as well.</p>
 
           <h2>Contact</h2>
-          <p>If you have questions about this policy, contact us at <a href="mailto:traxlentinfo@gmail.com">traxlentinfo@gmail.com</a>.</p>
+          <p>If you have questions about this policy, contact us at <a href="mailto:hello@traxlent.ca">hello@traxlent.ca</a>.</p>
         </section>
 
         <div className="mt-8">
