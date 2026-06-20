@@ -121,6 +121,25 @@ export function ValueProps() {
           </div>
         </div>
       </section>
+
+        {/* Testimonials */}
+        <section id="testimonials" className="relative py-16 md:py-20 border-t border-border">
+          <div className="container">
+            <Pill className="mb-5">Testimonials</Pill>
+            <h3 className="text-2xl md:text-3xl font-sentient mt-4 mb-6 text-center">
+              What local owners say
+            </h3>
+
+            <figure className="max-w-2xl mx-auto text-center">
+              <blockquote className="font-mono text-sm text-foreground leading-relaxed italic mb-4">
+                “Traxlents' technical abilities and customer-oriented focus has helped my business become a presence online. With custom tooling, SEO-optimization and a modern layout, my business is able to stand out from the crowd.”
+              </blockquote>
+              <figcaption className="font-sentient text-sm text-foreground opacity-90">
+                Owner, Royal Touch Detailing
+              </figcaption>
+            </figure>
+          </div>
+        </section>
     </>
   );
 }

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 180 32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Traxlent">
+  <rect x="0" y="0" width="4" height="24" fill="#FFC700" />
+  <rect x="0" y="0" width="14" height="4" fill="#FFC700" />
+  <text x="20" y="22" font-family="Geist Mono, monospace" font-size="20" font-weight="600" letter-spacing="0.04em" fill="#ffffff">TRAXLENT</text>
+</svg>

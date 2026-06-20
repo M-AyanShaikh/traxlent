@@ -3,31 +3,24 @@ import { Pill } from "./pill";
 const services = [
   {
     number: "01",
-    title: "Website Design & Development",
+    title: "New Website",
     description:
-      "Fast, mobile-first websites built to convert visitors into customers. From business sites to landing pages — designed to make a strong first impression.",
-    tags: ["New Builds", "Redesigns", "Landing Pages"],
+      "Includes custom design, responsive development, CMS setup, and SEO-friendly launch. For local businesses and startups ready to go live with a professional site.",
+    tags: ["Design", "Development", "CMS"],
   },
   {
     number: "02",
-    title: "Booking & Lead Funnels",
+    title: "Website Redesign",
     description:
-      "Turn your website into a lead machine. We build and optimize contact forms, booking flows, and inquiry systems that drive real inquiries.",
-    tags: ["Contact Forms", "Booking Systems", "CRO"],
+      "Includes visual refresh, performance and accessibility improvements, and migration support. For businesses with outdated or slow sites that need more leads.",
+    tags: ["Redesign", "Performance", "Accessibility"],
   },
   {
     number: "03",
-    title: "Business Automations",
+    title: "Care Plan",
     description:
-      "Stop doing things manually. We connect your tools, automate follow-ups, and set up systems that save you hours every week.",
-    tags: ["CRM Integrations", "Automations", "Workflows"],
-  },
-  {
-    number: "04",
-    title: "Tech Consulting & Support",
-    description:
-      "Got a digital problem you can't solve? We troubleshoot, advise, and fix — from broken tools to slow websites to confusing software.",
-    tags: ["Troubleshooting", "SEO Basics", "Ongoing Support"],
+      "Includes security updates, daily backups, monthly health checks, and small content edits. For owners who prefer a hands-off, reliable maintenance plan.",
+    tags: ["Maintenance", "Backups", "Support"],
   },
 ];
 
@@ -37,14 +30,14 @@ export function Services() {
       <div className="container">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16 gap-6">
           <div>
-            <Pill className="mb-5">What We Do</Pill>
+            <Pill className="mb-5">Services</Pill>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-sentient mt-4 text-balance">
-              Everything your business<br />
-              <i className="font-light">needs online</i>
+              What we offer<br />
+              <i className="font-light">straightforward & focused</i>
             </h2>
           </div>
           <p className="font-mono text-sm text-foreground max-w-xs text-balance">
-            We handle the tech side so you can stay focused on what you do best.
+            New websites, redesigns, and a simple care plan — each lists what’s included and who it’s for.
           </p>
         </div>
 
